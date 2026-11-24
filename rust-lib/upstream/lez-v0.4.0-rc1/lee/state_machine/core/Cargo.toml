@@ -1,0 +1,24 @@
+# Staged by modules/scripts/stage.py from lee/state_machine/core of LEZ (upstream/lez-v0.4.0-rc1): inherited fields resolved,
+# dev-dependencies and lints left out.
+
+[package]
+name = "lee_core"
+version = "0.1.0"
+edition = "2024"
+license = "MIT or Apache-2.0"
+
+[features]
+default = []
+host = ["ml-kem/getrandom"]
+test_utils = ["host"]
+
+[dependencies]
+risc0-zkvm = { version = "3.0.5", default-features = false, features = ["std"] }
+borsh = { version = "1.5.7", features = ["de_strict_order"] }
+serde = { version = "1.0.60", default-features = false, features = ["derive"] }
+serde_with = { version = "3.16.1" }
+thiserror = { version = "2.0" }
+base58 = { version = "0.2.0" }
+derive_more = { version = "2.1.1", features = ["debug", "display", "as_ref", "from", "into", "deref"] }
+ml-kem = { version = "0.3", features = ["hazmat"] }
+chacha20 = { version = "0.10" }

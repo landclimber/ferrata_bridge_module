@@ -1,0 +1,45 @@
+{
+ "commit": "98375f82c754f2fa4a56e20418687a89b321228f",
+ "lez": {
+  "dir": "upstream/lez-v0.4.0-rc1",
+  "commit": "1806e873ea2ac0e1b608aa7cf2f9b6e1fb12db21"
+ },
+ "crates": [
+  {
+   "name": "ferrata-core",
+   "version": "0.0.1",
+   "from": "crates/ferrata-core",
+   "source_sha256": "8f82b7f97bcf68c61f4828aebee06cc6eec10e19f079ad700fc097b085365b97"
+  },
+  {
+   "name": "ferrata-bridge-core",
+   "version": "0.2.0",
+   "from": "bridge/crates/ferrata-bridge-core",
+   "source_sha256": "88809598d7bc641a0f0fd703789e0a120fa58ac4ac5a35429df4fdc3bd14089b"
+  },
+  {
+   "name": "ferrata-lez-wire",
+   "version": "0.1.0",
+   "from": "lez/wire",
+   "source_sha256": "9d6fddb572e8936b4ac8b6a84e6964cfab1a172652ab108d765423ca8257d0d5"
+  },
+  {
+   "name": "ferrata-lez-bridge-wire",
+   "version": "0.1.0",
+   "from": "lez/bridge-wire",
+   "source_sha256": "ccf526387e79eeb27f0c8332ee5c21147fdd26b98540be093dbced822eae63c9"
+  },
+  {
+   "name": "ferrata-wallet",
+   "version": "0.1.0",
+   "from": "cli/wallet",
+   "source_sha256": "77ce2dafb4037489306b82308a05a4988e9a3b73e20aa625b4e0918b6082d8ef"
+  },
+  {
+   "name": "lee_core",
+   "version": "0.1.0",
+   "from": "upstream/lez-v0.4.0-rc1/lee/state_machine/core",
+   "source_sha256": "11ec726553cdf6d7aed30ab3c4eadd07135caae2d43d76fec62ef8f5e19569e5"
+  }
+ ]
+}

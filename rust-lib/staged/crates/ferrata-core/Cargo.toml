@@ -1,0 +1,24 @@
+# Staged by modules/scripts/stage.py from crates/ferrata-core of the repository: inherited fields resolved,
+# dev-dependencies and lints left out.
+
+[package]
+name = "ferrata-core"
+description = "Ethereum sync-committee light-client verification core (Ferrata, Logos RFP-021 spike)"
+version = "0.0.1"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+rust-version = "1.85"
+repository = "https://github.com/rainbowpuffpuff/ferrata"
+
+[features]
+default = ["blst"]
+blst = ["dep:blst"]
+zkcrypto = ["dep:bls12_381", "dep:sha2_09", "dep:group"]
+
+[dependencies]
+sha2 = { version = "0.10", default-features = false }
+blst = { version = "0.3", optional = true }
+bls12_381 = { version = "0.8", optional = true, default-features = false, features = ["groups", "pairings", "alloc", "experimental"] }
+sha2_09 = { package = "sha2", version = "0.9", optional = true, default-features = false }
+group = { version = "0.13", optional = true, default-features = false }
+tiny-keccak = { version = "2.0.2", default-features = false, features = ["keccak"] }

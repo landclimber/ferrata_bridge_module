@@ -1,0 +1,19 @@
+# Staged by modules/scripts/stage.py from bridge/crates/ferrata-bridge-core of the repository: inherited fields resolved,
+# dev-dependencies and lints left out.
+
+[package]
+name = "ferrata-bridge-core"
+version = "0.2.0"
+description = "Ferrata bridge, spec v2: deposit and burn trees, commitments, nullifiers, claim, release and checkpoint encodings (prototype, unaudited)"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+rust-version = "1.88"
+publish = false
+
+[features]
+default = ["std"]
+std = []
+
+[dependencies]
+sha2 = { version = "0.10.8", default-features = false }
+hmac = { version = "0.12.1", default-features = false }

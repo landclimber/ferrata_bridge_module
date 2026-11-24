@@ -1,0 +1,16 @@
+# Staged by modules/scripts/stage.py from lez/wire of the repository: inherited fields resolved,
+# dev-dependencies and lints left out.
+
+[package]
+name = "ferrata-lez-wire"
+description = "Messages, actor state and addresses of the Ferrata LEZ v0.4 program (guest and host)"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+publish = false
+
+[dependencies]
+ferrata-core = { path = "../../crates/ferrata-core", default-features = false }
+lee_core = { path = "../../../upstream/lez-v0.4.0-rc1/lee/state_machine/core" }
+borsh = { version = "=1.6.1", features = ["derive"] }
+sha2 = { version = "0.10", default-features = false }
